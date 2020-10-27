@@ -39,7 +39,7 @@ public class Interfaz extends JFrame
                     System.out.println("Introduzca su edad");
                     edad = entrada.nextInt();
                     if (edad >= 65) {
-                        costo = precio % 60;
+                        costo = (precio*60)/100;
                     }
                     else
                     {
@@ -81,8 +81,8 @@ public class Interfaz extends JFrame
                     double F, C, K, R;
 
                     System.out.println("1.-Convertir de Fahrenheit en Celcius");
-                    System.out.println("1.-Convertir de Fahrenheit en Kelvine");
-                    System.out.println("1.-Convertir de Fahrenheit en Rankine");
+                    System.out.println("2.-Convertir de Fahrenheit en Kelvine");
+                    System.out.println("3.-Convertir de Fahrenheit en Rankine");
 
                     otra_opcion2 = entrada.nextInt();
                     switch (otra_opcion2) {
@@ -112,17 +112,17 @@ public class Interfaz extends JFrame
                     break;
 
                 case 4:
-                    System.out.println("Profe no manche, la verdad no entendi como hacerlo. Nos hubiera dado un ejemplo de esto");
+                    System.out.println("Profe no pude hacerlo :b");
                     break;
 
                 case 5:
-                    System.out.println("Profe no manche, la verdad no entendi como hacerlo. Nos hubiera dado un ejemplo de esto");
+                    System.out.println("Profe no pude hacerlo :b");
                     break;
 
 
                 case 6:
                     int lado, altura, lado2, lado3, resultado, resultado2;
-                    do {
+
                         System.out.println("1.-Area y Perimetro de un Cuadrado");
                         System.out.println("2.-El perimetro de un triangulos");
                         System.out.println("3.-El volumen de una esfera y un cilindro");
@@ -172,9 +172,7 @@ public class Interfaz extends JFrame
                                 resultado2 = (lado2*lado2)*(3)*(altura);
                                 break;
                         }
-                        System.out.println("¿Deseas volver al menu?, si lo deseas escribe s");
-                        letra = entrada.next().charAt(0);
-                    }while(letra == 's');
+
                     break;
 
                 case 7:
@@ -269,7 +267,7 @@ public class Interfaz extends JFrame
                     break;
 
                 case 8:
-                    System.out.println("\"Profe no manche, la verdad no entendi como hacerlo. Nos hubiera dado un ejemplo de esto");
+                    System.out.println("Profe no pude hacerlo :b");
                     break;
 
                 case 9:
